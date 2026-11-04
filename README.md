@@ -101,4 +101,4 @@ from the UI after an explicit confirmation; the agent cannot call it.
 
 ## License
 
-[MIT](LICENSE).
+[MIT](LICENSE)
