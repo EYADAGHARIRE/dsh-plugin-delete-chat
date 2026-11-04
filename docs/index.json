@@ -1,0 +1,66 @@
+{
+  "format": 1,
+  "title": {
+    "en": "Emad's DSH plugins",
+    "zh": "Emad 的 DSH 插件"
+  },
+  "description": {
+    "en": "Community plugins for DeepSeek Harness.",
+    "zh": "DeepSeek Harness 社区插件。"
+  },
+  "metadata": {
+    "categories": {
+      "sessions": {
+        "title": {
+          "en": "Sessions",
+          "zh": "会话"
+        }
+      }
+    },
+    "labels": {
+      "destructive": {
+        "title": {
+          "en": "Destructive",
+          "zh": "危险操作"
+        }
+      }
+    }
+  },
+  "plugins": [
+    {
+      "name": "dsh-plugin-delete-chat",
+      "title": {
+        "en": "Delete chat",
+        "zh": "删除会话"
+      },
+      "description": {
+        "en": "Adds a permanent Delete chat action to every Session row menu and permanently removes that chat's stored data from this device.",
+        "zh": "在每个会话行的菜单中添加永久删除会话操作，并删除该会话在此设备上存储的数据。"
+      },
+      "icon": "icons/delete-chat.svg",
+      "author": "EYADAGHARIRE",
+      "metadata": {
+        "category": "sessions",
+        "labels": [
+          "destructive"
+        ]
+      },
+      "versions": [
+        {
+          "version": "1.0.2",
+          "publishTimestamp": 1793763024,
+          "source": {
+            "type": "npm"
+          },
+          "engines": {
+            "dsh": ">=0.2.1-rc.5"
+          }
+        }
+      ],
+      "repository": {
+        "url": "https://github.com/EYADAGHARIRE/dsh-plugin-delete-chat"
+      },
+      "homepage": "https://github.com/EYADAGHARIRE/dsh-plugin-delete-chat#readme"
+    }
+  ]
+}

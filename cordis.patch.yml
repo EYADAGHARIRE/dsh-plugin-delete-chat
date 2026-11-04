@@ -1,0 +1,6 @@
+# Adds a permanent "Delete chat" action to the Session row menu.
+# The Host row owns the authenticated RPC endpoint under /session-delete;
+# the same package's dsh.client entry renders the menu row and confirm dialog.
+- insert:
+    - id: delete-chat
+      name: 'dsh-plugin-delete-chat'

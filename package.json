@@ -1,0 +1,57 @@
+{
+  "name": "dsh-plugin-delete-chat",
+  "version": "1.0.2",
+  "description": "Adds a permanent Delete chat action to every Session row menu in DeepSeek Harness and removes that chat's stored data from this device.",
+  "type": "module",
+  "license": "MIT",
+  "author": "EYADAGHARIRE (https://github.com/EYADAGHARIRE/dsh-plugin-delete-chat)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EYADAGHARIRE/dsh-plugin-delete-chat.git"
+  },
+  "homepage": "https://github.com/EYADAGHARIRE/dsh-plugin-delete-chat#readme",
+  "bugs": {
+    "url": "https://github.com/EYADAGHARIRE/dsh-plugin-delete-chat/issues"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "session",
+    "delete",
+    "chat"
+  ],
+  "engines": {
+    "dsh": ">=0.2.1-rc.5"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "README.md",
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/en.json",
+    "locale/zh.json",
+    "icon.svg"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-connection",
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-renderer",
+        "@deepseek-ai/dsh-client-ui-workspace"
+      ]
+    }
+  }
+}
