@@ -1,10 +1,17 @@
 # Delete chat — DSH plugin
 
-[![npm](https://img.shields.io/npm/v/dsh-plugin-delete-chat.svg)](https://www.npmjs.com/package/dsh-plugin-delete-chat)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/EYADAGHARIRE/dsh-plugin-delete-chat/main/docs/banner.png" alt="Delete chat — a DeepSeek Harness plugin" width="820">
+</p>
 
-`dsh-plugin-delete-chat` — 
+<p align="center">
+  <a href="https://www.npmjs.com/package/dsh-plugin-delete-chat"><img alt="npm" src="https://img.shields.io/npm/v/dsh-plugin-delete-chat.svg"></a>
+  <img alt="license: MIT" src="https://img.shields.io/badge/license-MIT-2ea44f.svg">
+  <img alt="DSH 0.2.1-rc.5+" src="https://img.shields.io/badge/DSH-%E2%89%A5%200.2.1--rc.5-4c6ef5.svg">
+</p>
 
-Adds a permanent **Delete chat** action to every chat's "…" menu in the
+`dsh-plugin-delete-chat` adds a permanent **Delete chat** action to every chat's
+"…" menu in the
 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) Web UI, with a
 confirmation dialog.
 
@@ -16,6 +23,19 @@ stored data from this device:
 
 and the row disappears from the sidebar immediately. Files in the chat's
 workspace are never touched.
+
+## Screenshots
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/EYADAGHARIRE/dsh-plugin-delete-chat/main/docs/menu.png" alt="The Delete chat row in a session's “…” menu" width="440">
+  &nbsp;&nbsp;
+  <img src="https://raw.githubusercontent.com/EYADAGHARIRE/dsh-plugin-delete-chat/main/docs/dialog.png" alt="The Delete chat confirmation dialog" width="505">
+</p>
+
+The row sits after the shipped actions and is drawn exactly like the shipped
+**Delete workspace** row — error-red label and trash glyph, danger-tinted hover
+fill. Confirming opens the host's own dialog style with a clear warning; Delete
+then stops running work and removes the chat's stored data.
 
 ## Features
 
@@ -48,11 +68,18 @@ dsh-plugin-delete-chat
 and confirm. The Host half activates immediately and the "Delete chat" row
 appears in the connected page.
 
-**From a plugin market** — if this plugin is listed in a market index you
-trust, open **Plugins → Discover**, select that source, and install the card.
+**From a plugin market** — add this index source in **Plugins → Discover →
+Add index source**:
 
-**From this checkout** — point the plugin manager at the package directory
-(the plugin manager's `install_bundle` action accepts its absolute path).
+```
+https://eyadagharire.github.io/dsh-plugin-delete-chat/index.json
+```
+
+then install the **Delete chat** card. You can also add any other market index
+that lists the package.
+
+**From source** — point the plugin manager at the package directory (the
+plugin manager's `install_bundle` action accepts its absolute path).
 
 ## Uninstall
 
@@ -74,4 +101,8 @@ from the UI after an explicit confirmation; the agent cannot call it.
 
 ## Author
 
-Maintained by [@EYADAGHARIRE](https://github.com/EYADAGHARIRE/dsh-plugin-delete-chat).
+Maintained by [@EYADAGHARIRE](https://github.com/EYADAGHARIRE).
+
+## License
+
+MIT — see [LICENSE](LICENSE).
