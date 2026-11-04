@@ -1,6 +1,6 @@
 {
   "name": "dsh-plugin-delete-chat",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Adds a permanent Delete chat action to every Session row menu in DeepSeek Harness and removes that chat's stored data from this device.",
   "type": "module",
   "license": "MIT",
