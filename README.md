@@ -99,10 +99,6 @@ persistence backend (`<DSH_HOME>/sessions`); `DSH_HOME` defaults to `~/.dsh`.
 Deletion is permanent and irreversible by design. The action is available only
 from the UI after an explicit confirmation; the agent cannot call it.
 
-## Author
-
-Maintained by [@EYADAGHARIRE](https://github.com/EYADAGHARIRE).
-
 ## License
 
 MIT — see [LICENSE](LICENSE).
